@@ -181,7 +181,7 @@ const colors = {
                    My name is ${data.name}</h1>
                    <nav class="links-nav">
                       <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/${data.location}"><i class="fas fa-location-arrow"></i> ${data.location}</a>
-                      <a class="nav-link" target="_blank" rel="noopener noreferrer" href="${data.html_url}"><i class="fab fa-github-alt"></i> GitHub</a>
+                      <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/marcwithac27"><i class="fab fa-github-alt"></i> GitHub</a>
                       
                    </nav>
                 </div>
