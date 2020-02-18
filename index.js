@@ -49,6 +49,7 @@ function init() {
                                 following: data.following,
                                 github: data.login,
                                 stars: stars,
+                                html_url: data.html_url,
                                 
                             }
                             pdf.create(generateHTML(params)).toFile('./devportfolio.pdf', function (err, res) {
