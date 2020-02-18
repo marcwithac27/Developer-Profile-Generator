@@ -29,8 +29,10 @@ function init() {
             const querlURLStar = `https://api.github.com/users/${username}/starred`
             axios.get(queryURL).
                 then(function ({ data }) {
+                    //console.log(data)
                     axios.get(querlURLStar)
                         .then(function (res) {
+                           // console.log(res)
                             const sCount = res.data.map(element => {
                                 return element.stargazers_count
                             });
@@ -47,6 +49,7 @@ function init() {
                                 following: data.following,
                                 github: data.login,
                                 stars: stars,
+                                
                             }
                             pdf.create(generateHTML(params)).toFile('./devportfolio.pdf', function (err, res) {
                                 if (err) throw (err);
